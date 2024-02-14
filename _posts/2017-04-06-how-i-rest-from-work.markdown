@@ -10,7 +10,10 @@ tags: [Holidays, Hawaii]
 ## Game Description
 Oyun hakkında bilgi
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TBCRlnwJtZU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- Responsive iframe konteyneri -->
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/TBCRlnwJtZU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ![I and My friends]({{site.baseurl}}/assets/img/we-in-rest.jpg)
 
