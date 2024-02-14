@@ -18,5 +18,5 @@ Selfies sriracha taiyaki woke squid synth intelligentsia PBR&B ethical kickstart
 <div>
     <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama1" style="width: 30%; margin-right: 3.33%; height: auto;">
     <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama2" style="width: 30%; margin-right: 3.33%; height: auto;">
-    <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama3" style="width: 30%; margin-right: 3.33%; height: auto;">
+    <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama3" style="width: 30%; height: auto;">
 </div>
