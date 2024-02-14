@@ -15,10 +15,10 @@ img: we-in-rest.jpg
 <!-- Game Images -->
 <div class="carousel-container" style="max-width: 100%; overflow: hidden; display: flex; cursor: grab;">
   <div class="carousel-slide" style="display: flex; transition: 0.5s all ease-in-out; margin-right: -10px;">
-    <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama1" style="width: calc(33.33% - 10px); margin-right: 10px; height: auto;">
-    <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama2" style="width: calc(33.33% - 10px); margin-right: 10px; height: auto;">
-    <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama3" style="width: calc(33.33% - 10px); margin-right: 10px; height: auto;">
-    <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama3" style="width: calc(33.33% - 10px); margin-right: 10px; height: auto;">
+    <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama1" style="width: calc(33.33% - 10px); margin-right: 10px; height: auto;">
+    <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama2" style="width: calc(33.33% - 10px); margin-right: 10px; height: auto;">
+    <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama3" style="width: calc(33.33% - 10px); margin-right: 10px; height: auto;">
+    <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama3" style="width: calc(33.33% - 10px); margin-right: 10px; height: auto;">
   </div>
 </div>
 
