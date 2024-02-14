@@ -14,10 +14,15 @@ Oyun hakkında bilgi
 
 ![I and My friends]({{site.baseurl}}/assets/img/we-in-rest.jpg)
 
-<p>
-  <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama1" style="width: 50%;">
-  <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama1" style="width: 50%;">
-</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+  <div style="flex: 1; margin: 5px;">
+    <img src="{{ '/assets/img/image1.jpg' | prepend: site.baseurl }}" alt="Açıklama1" style="width: 100%; max-width: 400px; height: auto;">
+  </div>
+  <div style="flex: 1; margin: 5px;">
+    <img src="{{ '/assets/img/image1.jpg' | prepend: site.baseurl }}" alt="Açıklama2" style="width: 100%; max-width: 400px; height: auto;">
+  </div>
+</div>
+
 
 
 Selfies sriracha taiyaki woke squid synth intelligentsia PBR&B ethical kickstarter art party neutra biodiesel scenester. Health goth kogi VHS fashion axe glossier disrupt, vegan quinoa. Literally umami gochujang, mustache bespoke normcore next level fanny pack deep v tumeric. Shaman vegan affogato chambray. Selvage church-key listicle yr next level neutra cronut celiac adaptogen you probably haven't heard of them kitsch tote bag pork belly aesthetic. Succulents wolf stumptown art party poutine. Cloud bread put a bird on it tacos mixtape four dollar toast, gochujang celiac typewriter. Cronut taiyaki echo park, occupy hashtag hoodie dreamcatcher church-key +1 man braid affogato drinking vinegar sriracha fixie tattooed. Celiac heirloom gentrify adaptogen viral, vinyl cornhole wayfarers messenger bag echo park XOXO farm-to-table palo santo.
