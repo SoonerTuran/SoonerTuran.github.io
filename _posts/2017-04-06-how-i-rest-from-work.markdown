@@ -16,10 +16,10 @@ Oyun hakkında bilgi
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
   <div style="flex: 1; margin: 5px;">
-    <img src="{{ '/assets/img/image1.jpg' | prepend: site.baseurl }}" alt="Açıklama1" style="width: 100%; max-width: 400px; height: auto;">
+    <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama1" style="width: 100%; max-width: 400px; height: auto;">
   </div>
   <div style="flex: 1; margin: 5px;">
-    <img src="{{ '/assets/img/image1.jpg' | prepend: site.baseurl }}" alt="Açıklama2" style="width: 100%; max-width: 400px; height: auto;">
+    <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama2" style="width: 100%; max-width: 400px; height: auto;">
   </div>
 </div>
 
