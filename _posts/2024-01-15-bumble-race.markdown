@@ -13,67 +13,12 @@ img: we-in-rest.jpg
 </div>
 
 <!-- Game Images -->
-<div class="carousel-container" style="max-width: 100%; overflow: hidden; display: flex; cursor: grab;">
-  <div class="carousel-slide" style="display: flex; transition: 0.5s all ease-in-out; margin-right: -10px;">
+<div>
     <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama1" style="width: calc(33.33% - 10px); margin-right: 10px; height: auto;">
     <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama2" style="width: calc(33.33% - 10px); margin-right: 10px; height: auto;">
     <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama3" style="width: calc(33.33% - 10px); margin-right: 10px; height: auto;">
     <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama3" style="width: calc(33.33% - 10px); margin-right: 10px; height: auto;">
-  </div>
 </div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const slider = document.querySelector('.carousel-slide');
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-
-  slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    slider.classList.add('active');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-  });
-
-  slider.addEventListener('mouseleave', () => {
-    isDown = false;
-    slider.classList.remove('active');
-  });
-
-  slider.addEventListener('mouseup', () => {
-    isDown = false;
-    slider.classList.remove('active');
-  });
-
-  slider.addEventListener('mousemove', (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 3; // 3: Kaydırma hızı, ihtiyaca göre ayarlanabilir
-    slider.scrollLeft = scrollLeft - walk;
-  });
-
-  // Dokunmatik cihazlar için ekleyin
-  slider.addEventListener('touchstart', (e) => {
-    isDown = true;
-    startX = e.touches[0].pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-  });
-
-  slider.addEventListener('touchend', () => {
-    isDown = false;
-  });
-
-  slider.addEventListener('touchmove', (e) => {
-    if (!isDown) return;
-    const x = e.touches[0].pageX - slider.offsetLeft;
-    const walk = (x - startX) * 3; // Dokunmatik cihazlarda da kaydırma hızı
-    slider.scrollLeft = scrollLeft - walk;
-  });
-});
-</script>
-
 
 ## About Game
 
