@@ -23,6 +23,35 @@ Oyun hakkında bilgi
   </div>
 </div>
 
+<div class="carousel-container" style="max-width: 100%; overflow: hidden; display: flex;">
+  <div class="carousel-slide" style="display: flex; width: 300%; transition: 0.5s all ease-in-out;">
+    <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama1" style="width: 33.33%; height: auto;">
+    <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama2" style="width: 33.33%; height: auto;">
+    <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama3" style="width: 33.33%; height: auto;">
+    <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama3" style="width: 33.33%; height: auto;">
+    <!-- Diğer resimler de buraya eklenebilir, her biri için width: 33.33%; kullanılmalı -->
+  </div>
+</div>
+<button onclick="moveSlide(-1)">Önceki</button>
+<button onclick="moveSlide(1)">Sonraki</button>
+
+<script>
+var slideIndex = 0;
+showSlides(slideIndex);
+
+function moveSlide(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var slides = document.getElementsByClassName("carousel-slide")[0];
+  var totalSlides = slides.childElementCount;
+  if (n >= totalSlides / 3) { slideIndex = 0; }
+  if (n < 0) { slideIndex = totalSlides / 3 - 1; }
+  
+  slides.style.transform = 'translateX(' + (-33.33 * slideIndex) + '%)';
+}
+</script>
 
 
 Selfies sriracha taiyaki woke squid synth intelligentsia PBR&B ethical kickstarter art party neutra biodiesel scenester. Health goth kogi VHS fashion axe glossier disrupt, vegan quinoa. Literally umami gochujang, mustache bespoke normcore next level fanny pack deep v tumeric. Shaman vegan affogato chambray. Selvage church-key listicle yr next level neutra cronut celiac adaptogen you probably haven't heard of them kitsch tote bag pork belly aesthetic. Succulents wolf stumptown art party poutine. Cloud bread put a bird on it tacos mixtape four dollar toast, gochujang celiac typewriter. Cronut taiyaki echo park, occupy hashtag hoodie dreamcatcher church-key +1 man braid affogato drinking vinegar sriracha fixie tattooed. Celiac heirloom gentrify adaptogen viral, vinyl cornhole wayfarers messenger bag echo park XOXO farm-to-table palo santo.
