@@ -6,6 +6,8 @@ description: You’ll find this post in your `_posts` directory. Go ahead and ed
 fig-caption: # Add figcaption (optional)
 img: we-in-rest.jpg
 ---
+<!-- Game description -->
+Selfies sriracha taiyaki woke squid synth intelligentsia PBR&B ethical kickstarter art party neutra biodiesel scenester. Health goth kogi VHS fashion axe glossier disrupt, vegan quinoa. Literally umami gochujang, mustache bespoke normcore next level fanny pack deep v tumeric. Shaman vegan affogato chambray. Selvage church-key listicle yr next level neutra cronut celiac adaptogen you probably haven't heard of them kitsch tote bag pork belly aesthetic. 
 
 <!-- Youtube Videos -->
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 20px;">
@@ -14,12 +16,7 @@ img: we-in-rest.jpg
 
 <!-- Game Images -->
 <div>
-    <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama1" style="width: calc(33.33% - 10px); margin-right: 10px; height: auto;">
-    <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama2" style="width: calc(33.33% - 10px); margin-right: 10px; height: auto;">
-    <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama3" style="width: calc(33.33% - 10px); margin-right: 10px; height: auto;">
-    <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama3" style="width: calc(33.33% - 10px); margin-right: 10px; height: auto;">
+    <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama1" style="width: 33.33%; margin-right: 10px; height: auto;">
+    <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama2" style="width: 33.33%; margin-right: 10px; height: auto;">
+    <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama3" style="width: 33.33%; margin-right: 10px; height: auto;">
 </div>
-
-## About Game
-
-Selfies sriracha taiyaki woke squid synth intelligentsia PBR&B ethical kickstarter art party neutra biodiesel scenester. Health goth kogi VHS fashion axe glossier disrupt, vegan quinoa. Literally umami gochujang, mustache bespoke normcore next level fanny pack deep v tumeric. Shaman vegan affogato chambray. Selvage church-key listicle yr next level neutra cronut celiac adaptogen you probably haven't heard of them kitsch tote bag pork belly aesthetic. 
