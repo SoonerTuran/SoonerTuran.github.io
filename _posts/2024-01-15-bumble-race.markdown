@@ -16,7 +16,7 @@ Selfies sriracha taiyaki woke squid synth intelligentsia PBR&B ethical kickstart
 
 <!-- Game Images -->
 <div>
-    <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama1" style="width: 33.33%; margin-right: 10px; height: auto;">
-    <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama2" style="width: 33.33%; margin-right: 10px; height: auto;">
-    <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama3" style="width: 33.33%; margin-right: 10px; height: auto;">
+    <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama1" style="width: 27%; margin-right: 6%; height: auto;">
+    <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama2" style="width: 27%; margin-right: 6%; height: auto;">
+    <img src="{{ '/assets/img/dummy.jpg' | prepend: site.baseurl }}" alt="Açıklama3" style="width: 27%; margin-right: 6%; height: auto;">
 </div>
