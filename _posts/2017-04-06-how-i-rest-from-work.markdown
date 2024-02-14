@@ -14,43 +14,60 @@ Oyun hakkında bilgi
 
 ![I and My friends]({{site.baseurl}}/assets/img/we-in-rest.jpg)
 
-<div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
-  <div style="flex: 1; margin: 5px;">
-    <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama1" style="width: 100%; max-width: 400px; height: auto;">
-  </div>
-  <div style="flex: 1; margin: 5px;">
-    <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama2" style="width: 100%; max-width: 400px; height: auto;">
-  </div>
-</div>
-
-<div class="carousel-container" style="max-width: 100%; overflow: hidden; display: flex;">
-  <div class="carousel-slide" style="display: flex; width: 300%; transition: 0.5s all ease-in-out;">
-    <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama1" style="width: 33.33%; height: auto;">
-    <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama2" style="width: 33.33%; height: auto;">
-    <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama3" style="width: 33.33%; height: auto;">
-    <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama3" style="width: 33.33%; height: auto;">
-    <!-- Diğer resimler de buraya eklenebilir, her biri için width: 33.33%; kullanılmalı -->
+<div class="carousel-container" style="max-width: 100%; overflow: hidden; display: flex; cursor: grab;">
+  <div class="carousel-slide" style="display: flex; transition: 0.5s all ease-in-out; margin-right: -10px;">
+    <!-- Resimler arasında 10px boşluk için her bir resimden sonra 10px sağ margin eklenir -->
+    <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama1" style="width: calc(33.33% - 10px); margin-right: 10px; height: auto;">
+    <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama2" style="width: calc(33.33% - 10px); margin-right: 10px; height: auto;">
+    <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama3" style="width: calc(33.33% - 10px); margin-right: 10px; height: auto;">
+    <img src="{{ '/assets/img/we-in-rest.jpg' | prepend: site.baseurl }}" alt="Açıklama3" style="width: calc(33.33% - 10px); margin-right: 10px; height: auto;">
+    <!-- Daha fazla resim ekleyebilirsiniz -->
   </div>
 </div>
-<button onclick="moveSlide(-1)">Önceki</button>
-<button onclick="moveSlide(1)">Sonraki</button>
 
 <script>
-var slideIndex = 0;
-showSlides(slideIndex);
+let isDown = false;
+let startX;
+let scrollLeft;
 
-function moveSlide(n) {
-  showSlides(slideIndex += n);
-}
+const slider = document.querySelector('.carousel-slide');
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slider.classList.add('active');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('mouseleave', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mouseup', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 3; // Hareket miktarını ayarlayın
+  slider.scrollLeft = scrollLeft - walk;
+});
 
-function showSlides(n) {
-  var slides = document.getElementsByClassName("carousel-slide")[0];
-  var totalSlides = slides.childElementCount;
-  if (n >= totalSlides / 3) { slideIndex = 0; }
-  if (n < 0) { slideIndex = totalSlides / 3 - 1; }
-  
-  slides.style.transform = 'translateX(' + (-33.33 * slideIndex) + '%)';
-}
+// Dokunmatik ekranlar için
+slider.addEventListener('touchstart', (e) => {
+  isDown = true;
+  startX = e.touches[0].pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('touchend', () => {
+  isDown = false;
+});
+slider.addEventListener('touchmove', (e) => {
+  if (!isDown) return;
+  const x = e.touches[0].pageX - slider.offsetLeft;
+  const walk = (x - startX) * 3; // Hareket miktarını ayarlayın
+  slider.scrollLeft = scrollLeft - walk;
+});
 </script>
 
 
