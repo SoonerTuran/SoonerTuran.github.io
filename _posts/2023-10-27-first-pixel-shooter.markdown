@@ -1,8 +1,8 @@
 ---
 layout: post
 title: First Pixel Shooter
-date: 2024-01-15 13:00:20 +0300
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
+date: 2023-10-27 13:00:20 +0300
+description: # Add post description (optional)
 fig-caption: # Add figcaption (optional)
 img: first-pixel-shooter/icon.jpg
 ---
