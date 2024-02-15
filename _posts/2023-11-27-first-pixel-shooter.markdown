@@ -17,7 +17,7 @@ First Pixel Shooter is an engaging shooter game that fuses the thrill of sniper 
 <!-- Game Images -->
 <div>
     <img src="{{ '/assets/img/first-pixel-shooter/images/1.jpg' | prepend: site.baseurl }}" alt="img" style="width: 23%; margin-right: 1%; height: auto;">
-    <img src="{{ '/assets/img/first-pixel-shooter/images/2.jpg' | prepend: site.baseurl }}" alt="img" style="width: 23%; margin-right: 1%; height: auto;">
-    <img src="{{ '/assets/img/first-pixel-shooter/images/3.jpg' | prepend: site.baseurl }}" alt="img" style="width: 23%; margin-right: 1%; height: auto;">
-    <img src="{{ '/assets/img/first-pixel-shooter/images/4.jpg' | prepend: site.baseurl }}" alt="img" style="width: 23%; margin-right: 1%; height: auto;">
+    <img src="{{ '/assets/img/first-pixel-shooter/images/5.jpg' | prepend: site.baseurl }}" alt="img" style="width: 23%; margin-right: 1%; height: auto;">
+    <img src="{{ '/assets/img/first-pixel-shooter/images/6.jpg' | prepend: site.baseurl }}" alt="img" style="width: 23%; margin-right: 1%; height: auto;">
+    <img src="{{ '/assets/img/first-pixel-shooter/images/9.jpg' | prepend: site.baseurl }}" alt="img" style="width: 23%; margin-right: 1%; height: auto;">
 </div>
