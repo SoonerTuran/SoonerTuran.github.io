@@ -16,8 +16,8 @@ Navigate your mower through diverse levels, cutting grass to perfection while av
 
 <!-- Game Images -->
 <div>
-    <img src="{{ '/assets/img/bumble-race/images/1.jpg' | prepend: site.baseurl }}" alt="img" style="width: 23%; margin-right: 1%; height: auto;">
-    <img src="{{ '/assets/img/bumble-race/images/2.jpg' | prepend: site.baseurl }}" alt="img" style="width: 23%; margin-right: 1%; height: auto;">
-    <img src="{{ '/assets/img/bumble-race/images/3.jpg' | prepend: site.baseurl }}" alt="img" style="width: 23%; margin-right: 1%; height: auto;">
-    <img src="{{ '/assets/img/bumble-race/images/4.jpg' | prepend: site.baseurl }}" alt="img" style="width: 23%; margin-right: 1%; height: auto;">
+    <img src="{{ '/assets/img/mowing-empire/images/1.jpg' | prepend: site.baseurl }}" alt="img" style="width: 23%; margin-right: 1%; height: auto;">
+    <img src="{{ '/assets/img/mowing-empire/images/2.jpg' | prepend: site.baseurl }}" alt="img" style="width: 23%; margin-right: 1%; height: auto;">
+    <img src="{{ '/assets/img/mowing-empire/images/3.jpg' | prepend: site.baseurl }}" alt="img" style="width: 23%; margin-right: 1%; height: auto;">
+    <img src="{{ '/assets/img/mowing-empire/images/4.jpg' | prepend: site.baseurl }}" alt="img" style="width: 23%; margin-right: 1%; height: auto;">
 </div>
